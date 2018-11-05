@@ -60,6 +60,76 @@ function Hello() {
 ```
 ````
 
+### Multiple `highlight-start` & `highlight-end` in snippet
+
+```js
+if (highlights.length > 0) {
+  return split.map((line, i) => {
+    if (highlights.includes(i + 1)) {
+      // highlight-start
+      return {
+        highlighted: true,
+        code: wrap(line),
+      }
+      // highlight-end
+    }
+    // highlight-start
+    return {
+      code: line,
+    }
+    // highlight-end
+  })
+}
+```
+
+````
+```js
+if (highlights.length > 0) {
+  return split.map((line, i) => {
+    if (highlights.includes(i + 1)) {
+      // highlight-start
+      return {
+        highlighted: true,
+        code: wrap(line),
+      }
+      // highlight-end
+    }
+    // highlight-start
+    return {
+      code: line,
+    }
+    // highlight-end
+  })
+}
+```
+````
+
+### `highlight-range`
+
+```js
+function Hello() {
+  // highlight-range{1,2,4-5}
+  var a = 'b';
+  var c = 'd';
+  var e = 'f';
+  var g = 'h';
+  return a + c + e + g;
+}
+```
+
+````
+```js
+function Hello() {
+  // highlight-range{1, 2, 4-5}
+  var a = 'b';
+  var c = 'd';
+  var e = 'f';
+  var g = 'h';
+  return a + c + e + g;
+}
+```
+````
+
 ## HTML
 
 ```html
