@@ -212,6 +212,68 @@ class Square extends React.Component {
 ```
 ````
 
+### Start/end
+
+```jsx
+class Square extends React.Component {
+  render() {
+    // highlight-start
+    return (
+      <button className="square">
+        {this.props.value}
+      </button>
+    );
+    // highlight-end
+  }
+}
+```
+
+````
+```jsx
+class Square extends React.Component {
+  render() {
+    // highlight-start
+    return (
+      <button className="square">
+        {this.props.value}
+      </button>
+    );
+    // highlight-end
+  }
+}
+```
+````
+
+### highlight-range
+
+```jsx
+class Square extends React.Component {
+  render() {
+    // highlight-range{2-4}
+    return (
+      <button className="square">
+        {this.props.value}
+      </button>
+    );
+  }
+}
+```
+
+````
+```jsx
+class Square extends React.Component {
+  render() {
+    // highlight-range{2-4}
+    return (
+      <button className="square">
+        {this.props.value}
+      </button>
+    );
+  }
+}
+```
+````
+
 ## Existing Behavior (ranges)
 
 ```javascript{1,4-6}
