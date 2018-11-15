@@ -1,0 +1,8 @@
+html {
+  /* highlight-next-line */
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box; /* highlight-line */
+}

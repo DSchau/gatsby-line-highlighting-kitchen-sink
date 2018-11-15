@@ -274,6 +274,24 @@ class Square extends React.Component {
 ```
 ````
 
+```css
+html {
+  /* highlight-range{1,2} */
+  height: 100%;
+  width: 100%;
+}
+```
+
+````
+```css
+html {
+  /* highlight-range{1,2} */
+  height: 100%;
+  width: 100%;
+}
+```
+````
+
 ## Existing Behavior (ranges)
 
 ```javascript{1,4-6}
@@ -305,3 +323,60 @@ plugins: [
 ]
 ```
 ````
+
+# Gatsby Remark Embed Snippet
+
+## CSS
+
+`embed:css-range.css`
+
+```
+html {
+  /* highlight-range{1,2} */
+  height: 100%;
+  width: 100%;
+}
+```
+
+`embed:css-line-next-line.css`
+
+```
+html {
+  /* highlight-next-line */
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box; /* highlight-line */
+}
+```
+
+## HTML
+
+`embed:html-range.html`
+
+```
+<html>
+    <body>
+    <!-- highlight-range{2} -->
+    <p>
+        highlighted
+    </p>
+    </body>
+</html>
+```
+
+## JSX
+
+`embed:jsx-range.jsx`
+
+```
+<ul>
+  {/* highlight-range{2-4} */}
+  <li>Not highlighted</li>
+  <li>Highlighted</li>
+  <li>Highlighted</li>
+  <li>Highlighted</li>
+  <li>Not highlighted</li>
+</div>
+```

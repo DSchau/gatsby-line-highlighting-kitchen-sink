@@ -5423,6 +5423,16 @@ gatsby-react-router-scroll@^2.0.1:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
+gatsby-remark-embed-snippet@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-3.0.3.tgz#325bfad3bd540e755a5dabdc7ec7d78492f0d757"
+  integrity sha512-y2jK/9emomomxRQpAPe8O0eEWsiHaGIke4owL/S+rrv2svf7UzkS3kV/uYUJ8lm3sqbNmZoxt0s1dtnGbp3RmA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    normalize-path "^2.1.1"
+    parse-numeric-range "^0.0.2"
+    unist-util-map "^1.0.3"
+
 gatsby-remark-prismjs@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.0.3.tgz#1aa29bef516a1974b78f82808ccc1ad0a37eff3c"
@@ -5450,10 +5460,10 @@ gatsby-source-filesystem@^2.0.6:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-transformer-remark@^2.1.11:
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.11.tgz#fe7c1166077072d3b0b7445c0d862220a5a44f43"
-  integrity sha512-njH4NeWNnxrxdZeldWdgUJWQOiGUu2rTVz2fO20DSlEE+ROIpMRqnURD93CUX7I5bcl7UdCP8Hd5OfFEylQmbA==
+gatsby-transformer-remark@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.12.tgz#192c87622bed497bb0f719e9bd8ea36f4290c8fc"
+  integrity sha512-z8LDu/BxYBNVWsZl//WdwttwQD51wdFSeCLU9dvOa4UqphSOimFwpuKI2uOtI2TVoVvFVvDPgU3L/oLUZbhMuw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
@@ -12172,6 +12182,13 @@ unist-util-is@^2.0.0, unist-util-is@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-2.1.2.tgz#1193fa8f2bfbbb82150633f3a8d2eb9a1c1d55db"
   integrity sha512-YkXBK/H9raAmG7KXck+UUpnKiNmUdB+aBGrknfQ4EreE1banuzrKABx3jP6Z5Z3fMSPMQQmeXBlKpCbMwBkxVw==
+
+unist-util-map@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/unist-util-map/-/unist-util-map-1.0.4.tgz#f27bb03e14e8072171379d132c96c1dfcea44574"
+  integrity sha512-Qv68pQz05hQbjPI+TubZQI5XII5DScRVWaKNc6+qfmHaFGxaGUbkV8i++mM2nk7XgwXE+vei99d/Q2d1tMA3EQ==
+  dependencies:
+    object-assign "^4.0.1"
 
 unist-util-modify-children@^1.0.0:
   version "1.1.3"
