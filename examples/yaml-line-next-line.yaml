@@ -1,0 +1,5 @@
+foo: "highlighted" # highlight-line
+bar: "not highlighted"
+# highlight-next-line
+baz: "highlighted"
+qux: "not highlighted"

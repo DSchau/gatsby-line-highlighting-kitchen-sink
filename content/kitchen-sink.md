@@ -470,6 +470,8 @@ html {
 
 ## JSX
 
+### Line range
+
 `embed:jsx-range.jsx`
 
 ```
@@ -481,4 +483,34 @@ html {
   <li>Highlighted</li>
   <li>Not highlighted</li>
 </div>
+```
+
+### Line & next-line
+
+`embed:jsx-line-next-line.jsx`
+
+```
+<div>
+<button>Add Item</button> {/* highlight-line */}
+
+<ReactCSSTransitionGroup
+  transitionName="example"
+  transitionEnterTimeout={500}
+  transitionLeaveTimeout={300}>
+  {/* highlight-next-line */}
+  {items}
+</ReactCSSTransitionGroup>
+</div>
+```
+
+## YAML
+
+`embed:yaml-line-next-line.yaml`
+
+```
+foo: "highlighted" # highlight-line
+bar: "not highlighted"
+# highlight-next-line
+baz: "highlighted"
+qux: "not highlighted"
 ```
