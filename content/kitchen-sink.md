@@ -514,3 +514,48 @@ bar: "not highlighted"
 baz: "highlighted"
 qux: "not highlighted"
 ```
+## highlight-line (jsx and html)
+
+Re: [this comment](https://github.com/gatsbyjs/gatsby/pull/10202#issuecomment-442890458)
+
+```jsx
+import React from 'react';
+
+export default function App() {
+  return (
+    <React.Fragment>
+      <h1>Hello World</h1> {/* highlight-line */}
+    </React.Fragment>
+  )
+}
+```
+
+````
+
+```jsx
+import React from 'react';
+
+export default function App() {
+  return (
+    <React.Fragment>
+      <h1>Hello World</h1> {/* highlight-line */}
+    </React.Fragment>
+  )
+}
+```
+
+````
+
+```html
+<div>
+  <h1>Hello World</h1> <!-- highlight-line -->
+</div>
+```
+
+````
+```html
+<div>
+  <h1>Hello World</h1> <!-- highlight-line -->
+</div>
+```
+````
